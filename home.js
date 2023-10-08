@@ -4,7 +4,7 @@ async function runPuppeteerScript() {
     const browser = await puppeteer.launch({
       executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
       args: [''],
-      headless: false,
+      headless: true, // false to open browser
       devtools: false,
       defaultViewport: {
         width: 1100,
